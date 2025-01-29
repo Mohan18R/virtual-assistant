@@ -1,62 +1,64 @@
 # Virtual Assistant
 
-A Python-based intelligent virtual assistant that enables users to control applications and access information using voice commands and hand gestures. This project combines voice recognition, text-to-speech, gesture control, and web scraping to deliver an intuitive, multimodal user experience.
+An intelligent AI assistant that combines **voice recognition** and **hand gesture control** to perform system automation, open applications, search the web, and control media playback hands-free.
 
-## Features
+## 🚀 Features
+- **Voice-Controlled AI Assistant**: Uses **SpeechRecognition** and **pyttsx3** for natural language interactions.
+- **Gesture-Based System Control**: Utilizes **OpenCV** and **MediaPipe** to detect hand gestures for controlling volume, media playback, and navigation.
+- **Automated System Interactions**: Integrates **PyAutoGUI** for executing commands triggered by voice and gestures.
+- **Wikipedia & Web Search**: Fetches concise answers from **Wikipedia** or opens a **Google search** when needed.
+- **Application Launcher**: Opens installed applications like VS Code, Word, and web apps like YouTube and WhatsApp.
 
-- **Voice-Controlled Commands**  
-  - Open applications like YouTube, WhatsApp, Microsoft Word, and PowerPoint.
-  - Perform web searches and fetch answers to general queries.
-  - Real-time speech-to-text and text-to-speech capabilities.
+## 🛠️ Tech Stack
+- **Python**
+- **SpeechRecognition**
+- **pyttsx3**
+- **OpenCV**
+- **MediaPipe**
+- **PyAutoGUI**
+- **Wikipedia API**
 
-- **Gesture-Based Control**  
-  - Integrated with MediaPipe for hand tracking and gesture recognition.
-  - Control system functions like volume adjustment, media playback, and navigation using hand gestures.
+## 🎯 How It Works
+### 1️⃣ Voice Commands
+- Say "Open VS Code" to launch VS Code.
+- Say "Search Python tutorials" to get results on Google.
+- Say "Gesture mode" to activate hand tracking.
+- Say "Silent mode" to stop voice responses.
+- Say "Wake up" to resume listening.
 
-- **Web Scraping**  
-  - Fetch real-time information from Google using BeautifulSoup.
-  - Provide spoken answers to user questions.
+### 2️⃣ Hand Gestures (in Gesture Mode)
+- **Move Cursor**: Index finger up, all others down.
+- **Click**: Thumb up, all other fingers down.
+- **Volume Control**: Adjusts based on distance between fingers.
+- **Swipe Left/Right**: Moves slides/media using specific hand signs.
+- **Take Screenshot**: Perform a specific hand gesture.
 
-- **Scalable and Modular**  
-  - Designed to accommodate future features like expanded application support and advanced gesture recognition.
-
-## Technologies Used
-
-- **Python** for backend scripting.
-- **SpeechRecognition** for voice command input.
-- **pyttsx3** for text-to-speech output.
-- **OpenCV** and **MediaPipe** for hand gesture recognition.
-- **PyAutoGUI** for system interaction via gestures.
-- **BeautifulSoup** for web scraping to fetch answers.
-
-## How It Works
-
-1. **Voice Commands:**  
-   - The assistant listens for commands and responds by executing the appropriate actions, such as opening applications or searching the web.
-
-2. **Gesture Control:**  
-   - Hand gestures are detected using a webcam, allowing for control of system functions without physical input.
-
-3. **Information Retrieval:**  
-   - General queries are processed via web scraping, and the assistant provides real-time spoken answers.
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- Required Python libraries:
-  - `speechrecognition`
-  - `pyttsx3`
-  - `opencv-python`
-  - `mediapipe`
-  - `pyautogui`
-  - `pycaw`
-  - `beautifulsoup4`
-  - `requests`
-
-### Installation
-
-1. Clone the repository:
+## 🏗️ Installation
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/Mohan18R/virtual-assistant.git
+   git clone https://github.com/your-repo.git
+   cd ai-assistant-gesture
+   ```
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the assistant**
+   ```bash
+   python main.py
+   ```
+
+## 📌 Future Enhancements
+- **Context-aware voice responses**
+- **More refined hand gesture actions**
+- **GUI for better user experience**
+
+## 📜 License
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+Feel free to fork, submit issues, and send pull requests!
+
+---
+
+
